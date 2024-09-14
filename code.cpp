@@ -8,8 +8,8 @@ int arr2[7]={2,4,8,10,11,12,16};
 int s2=7;
 
 int res[12];
-int i, j, k;
-while(int i<s1 && int j<s2){
+int i=0, j=0, k=0;
+while (i<s1 && j<s2){
   if(arr1[i]<arr2[j]){
     res[k]=arr1[i];
     i++;
@@ -32,7 +32,13 @@ while(i<s1){
 while(j<s2){
   res[k++]=arr2[j++];
 }
-  
+  cout << "Merged array: ";
+  for (int x = 0; x < s1 + s2; x++) {
+      cout << res[x] << " ";
+  }
+  cout << endl;
+
+  return 0;
   
 return 0;
 }
